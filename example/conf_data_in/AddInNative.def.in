@@ -1,0 +1,8 @@
+LIBRARY    "@Addn_Native@@MySuffix1@@MySuffix2@_@Addn_VERSION@.DLL"
+
+EXPORTS
+GetClassObject
+DestroyObject
+GetClassNames
+SetPlatformCapabilities
+GetAttachType

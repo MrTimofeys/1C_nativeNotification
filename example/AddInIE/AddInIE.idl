@@ -1,0 +1,120 @@
+// AddInIE.idl : IDL source for AddInIE
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (AddInIE.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+
+[
+    object,
+    uuid(49CF7EF2-C53B-409e-9C1C-7E30E5BE3FF6),
+    dual,
+    //nonextensible,
+    helpstring("IAddInSite Interface"),
+    pointer_default(unique)
+]
+interface IAddInSite : IDispatch{
+    [id(1), helpstring("method initialize"), hidden] HRESULT initialize([in] BSTR clsid, [in] BOOL getInfo, [in] SHORT type, [in] BSTR filename);
+    [id(2), helpstring("method getName")] HRESULT getName([out,retval] BSTR* name);
+    [id(3), helpstring("method getObject")] HRESULT getObject([out,retval] IUnknown** ppOut);
+    [id(4), helpstring("method getPropertyValue")] HRESULT getPropertyValue([in] BSTR name, [out,retval] VARIANT* value);
+    [id(5), helpstring("method setPropertyValue")] HRESULT setPropertyValue([in] BSTR name, [in] VARIANT* value);
+    [id(6), helpstring("method call")] HRESULT call([in] BSTR name, [in] VARIANTARG* params, [out,retval] VARIANT* pretVal);
+    [id(7), helpstring("method done")] HRESULT done();
+    [id(8), helpstring("method getVersion")] HRESULT getVersion([out,retval] LONG* vers);
+    [id(9), helpstring("method getInfo")] HRESULT getInfo([out,retval] BSTR* info);
+};
+[
+    object,
+    uuid(8DF1E35A-5904-47A8-BEF5-EB64EAD7B27C),
+    dual,
+    nonextensible,
+    helpstring("IAddInSiteEx Interface"),
+    pointer_default(unique)
+]
+interface IAddInSiteEx : IAddInSite {
+    [id(10), helpstring("method callback")] HRESULT callback([in] VARIANT* res);
+};
+[
+    object,
+    uuid(0A8BA41F-D078-49fb-A830-DD7525C2562C),
+    dual,
+    nonextensible,
+    helpstring("IAddInServiceEx Interface"),
+    pointer_default(unique)
+]
+interface IAddInServiceEx : IDispatch{
+
+    [id(1), helpstring("method init")] HRESULT init([in] IDispatch* listener);
+    [id(2), helpstring("method loadAddIn")] HRESULT loadAddIn([in] BSTR name, [in] BSTR url, [in] SHORT type);
+    [id(3), helpstring("method createInstance")] HRESULT createInstance([in] BSTR name, [out,retval] IAddInSite** ppvObject);
+    [id(4), helpstring("method releaseObject")] HRESULT releaseObject([in] IUnknown* src);
+    [id(5), helpstring("method setLocale")] HRESULT setLocale([in] BSTR locale);
+};
+[
+    object,
+    uuid(6FED692C-8E42-4868-8E23-872E01881F16),
+    dual,
+    nonextensible,
+    helpstring("IAdapterCOM Interface"),
+    pointer_default(unique)
+]
+interface IAdapterCOM : IDispatch{
+};
+
+[
+    object,
+    uuid(D1B7E539-C40A-4D91-AB7C-FCA5236B712E),
+    dual,
+    nonextensible,
+    helpstring("IAdapterNative Interface"),
+    pointer_default(unique)
+]
+interface IAdapterNative : IDispatch{
+};
+///////////////////////////////////////////////////////////////////////////////
+[
+	uuid(DE58416A-BBA9-47C8-A410-AD235EDCF652), //change
+	version(1.0),
+	helpstring("AddInIE 1.0 Type Library")  //change
+]
+library AddInIELib  //change
+{
+	importlib("stdole2.tlb");
+
+    [
+        uuid(F17C0A6F-6401-44EA-9197-16D5486B6026), //change
+        helpstring("AddInServiceEx Class")
+    ]
+    coclass AddInServiceEx
+    {
+        [default] interface IAddInServiceEx;
+    };
+    [
+        uuid(2299DACE-A3A7-4c61-ACA4-45137420395D), //change
+        helpstring("AddInSite Class")
+    ]
+    coclass AddInSite
+    {
+        [default] interface IAddInSiteEx;
+    };
+    [
+        uuid(C78BA29F-BC50-4927-95BC-11354D4EC17D), //change
+        helpstring("AdapterCOM Class")
+    ]
+    coclass AdapterCOM
+    {
+        [default] interface IAdapterCOM;
+    };
+    [
+        uuid(979E8957-08DF-40fc-860B-75E564DDEBD5), //change
+        helpstring("AdapterNative Class")
+    ]
+    coclass AdapterNative
+    {
+        [default] interface IAdapterNative;
+    };
+};

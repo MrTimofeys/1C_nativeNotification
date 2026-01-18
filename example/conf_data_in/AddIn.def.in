@@ -1,0 +1,11 @@
+; AddIn.def : Declares the module parameters.
+
+LIBRARY      "@Addn_COM@@MySuffix2@_@Addn_VERSION@.DLL"
+
+EXPORTS
+    DllCanUnloadNow        PRIVATE
+    DllGetClassObject    PRIVATE
+    DllRegisterServer    PRIVATE
+    DllUnregisterServer    PRIVATE
+    DllInstall        PRIVATE
+    GetAttachType        PRIVATE

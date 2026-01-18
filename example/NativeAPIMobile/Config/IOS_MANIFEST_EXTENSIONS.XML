@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <Additions>
+        <framework name="System/Library/Frameworks/CoreMotion.framework"/>
+    </Additions>
+    <Info_plist>
+        <key>NSMotionUsageDescription</key>
+        <string>In order to count steps we need an access to your stepcounter</string>
+        <key>Special addin key</key>
+        <string>88821555</string>
+    </Info_plist>
+</root>

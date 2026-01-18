@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<bundle xmlns="http://v8.1c.ru/8.2/addin/bundle" name="com_1c_StepCounter">
+  <component os="iOS" path="com_1c_StepCounter.dylib" buildType="developer" type="native" arch="Universal"/>
+  <component os="iOS" path="com_1c_StepCounter.a" buildType="release" type="native" arch="Universal"/>
+  <component os="Android" path="libcom_1c_StepCounter_i386.so" codeType="c++" type="native" arch="i386"/>
+  <component os="Android" path="com_1c_StepCounter.apk" codeType="java" type="native" arch="i386"/>
+  <component os="Android" path="libcom_1c_StepCounter_x64.so" codeType="c++" type="native" arch="x86_64"/>
+  <component os="Android" path="com_1c_StepCounter.apk" codeType="java" type="native" arch="x86_64"/>
+  <component os="Android" path="libcom_1c_StepCounter_ARM.so" codeType="c++" type="native" arch="ARM"/>
+  <component os="Android" path="com_1c_StepCounter.apk" codeType="java" type="native" arch="ARM"/>
+  <component os="Android" path="libcom_1c_StepCounter_ARM64.so" codeType="c++" type="native" arch="ARM64"/>
+  <component os="Android" path="com_1c_StepCounter.apk" codeType="java" type="native" arch="ARM64"/>
+  <component os="WindowsRuntime" path="com_1c_StepCounter_ARM.dll" type="native" arch="ARM"/>
+  <component os="WindowsRuntime" path="com_1c_StepCounter_x64.dll" type="native" arch="x86_64"/>
+  <component os="WindowsRuntime" path="com_1c_StepCounter_Win32.dll" type="native" arch="i386"/>
+</bundle>
+
+
+

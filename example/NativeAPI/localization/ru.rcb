@@ -1,0 +1,11 @@
+﻿ru
+{
+    ////////////////////////////////////////////////////////////////////////////
+    // Strings
+    IDS_GENERICERROR:string {"Ошибка"}
+    IDS_FILENOTFOUND:string {"Файл не найден"}
+    IDS_IOERROR:string {"Ошибка чтения/записи файла"}
+    IDS_ERR_TYPE_MISMATCH:string {"Несоответствие типа параметра."}
+    IDS_TEXT_OK:string {"OK"}
+    IDS_TEXT_CANCEL:string {"Отмена"}
+}

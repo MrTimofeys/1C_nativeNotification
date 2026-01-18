@@ -1,0 +1,11 @@
+﻿en
+{
+    ////////////////////////////////////////////////////////////////////////////
+    // Strings
+    IDS_GENERICERROR:string {"Error"}
+    IDS_FILENOTFOUND:string {"File not found"}
+    IDS_IOERROR:string {"File reading/writing error"}
+    IDS_ERR_TYPE_MISMATCH:string {"Parameter type mismatch."}
+    IDS_TEXT_OK:string {"OK"}
+    IDS_TEXT_CANCEL:string {"Cancel"}
+}

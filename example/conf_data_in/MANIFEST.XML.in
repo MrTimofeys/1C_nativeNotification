@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<bundle xmlns="http://v8.1c.ru/8.2/addin/bundle">
+  <component os="Windows" path="@Addn_ChromeSetup@32.exe" type="plugin" object="@Addn_Mainfest@" arch="i386" client="Firefox" clientVersion="40.*"/> 
+  <component os="Windows" path="@Addn_ChromeSetup@64.exe" type="plugin" object="@Addn_Mainfest@" arch="x86_64" client="Firefox" clientVersion="40.*"/>
+  <component os="Linux" path="@Addn_ChromeSetup@Lin32.sh" type="plugin" object="@Addn_Mainfest@" arch="i386" client="Firefox" clientVersion="40.*"/>
+  <component os="Linux" path="@Addn_ChromeSetup@Lin64.sh" type="plugin" object="@Addn_Mainfest@" arch="x86_64" client="Firefox" clientVersion="40.*"/>
+  <component os="Linux" path="@Addn_ChromeSetup@LinARM64.sh" type="plugin" object="@Addn_Mainfest@" arch="ARM64" client="Firefox" clientVersion="40.*"/>
+  <component os="Linux" path="@Addn_ChromeSetup@LinE2K-8C.sh" type="plugin" object="@Addn_Mainfest@" arch="E2K" client="Firefox" clientVersion="40.*"/>
+  <component os="Windows" path="@Addn_IESetup@32.exe" type="plugin" object="@Addn_IE@.AddInServiceEx" arch="i386" client="MSIE"/>
+  <component os="Windows" path="@Addn_IESetup@64.exe" type="plugin" object="@Addn_IE@.AddInServiceEx" arch="x86_64" client="MSIE"/>
+  <component os="Windows" path="@Addn_ChromeSetup@32.exe" type="plugin" object="@Addn_Mainfest@" arch="i386" client="Chrome" />
+  <component os="Windows" path="@Addn_ChromeSetup@64.exe" type="plugin" object="@Addn_Mainfest@" arch="x86_64" client="Chrome" />
+  <component os="Linux" path="@Addn_ChromeSetup@Lin32.sh" type="plugin" object="@Addn_Mainfest@" arch="i386" client="Chrome" />
+  <component os="Linux" path="@Addn_ChromeSetup@Lin64.sh" type="plugin" object="@Addn_Mainfest@" arch="x86_64" client="Chrome" />
+  <component os="Linux" path="@Addn_ChromeSetup@LinARM64.sh" type="plugin" object="@Addn_Mainfest@" arch="ARM64" client="Chrome" />
+  <component os="MacOS" path="@Addn_Chrome@MacOS64.pkg" type="plugin" object="@Addn_Mainfest@" arch="x86_64" client="Chrome" />
+  <component os="Windows" path="@Addn_ChromeSetup@32.exe" type="plugin" object="@Addn_Mainfest@" arch="i386" client="AnyChromiumBased" />
+  <component os="Windows" path="@Addn_ChromeSetup@64.exe" type="plugin" object="@Addn_Mainfest@" arch="x86_64" client="AnyChromiumBased" />
+  <component os="Linux" path="@Addn_ChromeSetup@Lin32.sh" type="plugin" object="@Addn_Mainfest@" arch="i386" client="AnyChromiumBased" />
+  <component os="Linux" path="@Addn_ChromeSetup@Lin64.sh" type="plugin" object="@Addn_Mainfest@" arch="x86_64" client="AnyChromiumBased" />
+  <component os="Linux" path="@Addn_ChromeSetup@LinARM64.sh" type="plugin" object="@Addn_Mainfest@" arch="ARM64" client="AnyChromiumBased" />
+  <component os="Linux" path="@Addn_ChromeSetup@LinE2K-8C.sh" type="plugin" object="@Addn_Mainfest@" arch="E2K" client="AnyChromiumBased" />
+  <component os="MacOS" path="@Addn_Chrome@MacOS64.pkg" type="plugin" object="@Addn_Mainfest@" arch="x86_64" client="AnyChromiumBased" />
+  <component os="MacOS" path="@Addn_Chrome@MacOS64.pkg" type="plugin" object="@Addn_Mainfest@" arch="x86_64" client="Firefox" />
+  <component os="MacOS" path="@Addn_Safari@MacOS32.pkg" type="plugin" object="application/component-example-1" arch="i386" client="Safari" />
+  <component os="MacOS" path="@Addn_Chrome@MacOSARM64.pkg" type="plugin" object="@Addn_Mainfest@" arch="ARM64" client="AnyChromiumBased" />
+  <component os="MacOS" path="@Addn_Chrome@MacOSARM64.pkg" type="plugin" object="@Addn_Mainfest@" arch="ARM64" client="Firefox" />
+  <component os="MacOS" path="@Addn_Safari@MacOSARM64.pkg" type="plugin" object="application/component-example-1" arch="ARM64" client="Safari" />
+  <component os="Windows" path="@Addn_Native@Win32_@Addn_VERSION@.dll" type="native" arch="i386"/>
+  <component os="Windows" path="@Addn_Native@Win64_@Addn_VERSION@.dll" type="native" arch="x86_64"/>
+  <component os="Linux" path="lib@Addn_Native@Lin32_@Addn_VERSION@.so" type="native" arch="i386"/>
+  <component os="Linux" path="lib@Addn_Native@Lin64_@Addn_VERSION@.so" type="native" arch="x86_64"/>
+  <component os="Linux" path="lib@Addn_Native@LinARM64_@Addn_VERSION@.so" type="native" arch="ARM64"/>
+  <component os="Linux" path="lib@Addn_Native@LinE2K-8C_@Addn_VERSION@.so" type="native" arch="E2K"/>
+  <component os="MacOS" path="lib@Addn_Native@Mac64_@Addn_VERSION@.dylib" type="native" arch="x86_64"/>
+  <component os="MacOS" path="lib@Addn_Native@MacARM64_@Addn_VERSION@.dylib" type="native" arch="ARM64"/>
+</bundle>

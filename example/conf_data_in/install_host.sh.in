@@ -1,0 +1,59 @@
+#!/bin/sh
+# Copyright 2013 The Chromium Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+set -e
+
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+
+TARGET_DIR=~/.config/google-chrome/NativeMessagingHosts
+FF_TARGET_DIR=~/.mozilla/native-messaging-hosts
+YA_TARGET_DIR=~/.config/yandex-browser/NativeMessagingHosts
+GOST_TARGET_DIR=~/.config/chromium-gost/NativeMessagingHosts
+CHR_TARGET_DIR=~/.config/chromium/NativeMessagingHosts
+MS_TARGET_DIR=~/.config/microsoft-edge/NativeMessagingHosts
+
+HOST_NAME=@JSON_CHR@
+FF_HOST_NAME=@JSON_FF@
+BINDIR=~/bin/@ADN_NAME@/@ADDNVER@
+FILE=@Addn_Chrome@@MySuffix1@@MySuffix2@
+LIBFILE=lib@Addn_Native@@MySuffix1@@MySuffix2@@MySuffix2Append@_@Addn_VERSION@.so
+# Create directory to store native messaging host.
+mkdir -p $TARGET_DIR
+mkdir -p $FF_TARGET_DIR
+mkdir -p $YA_TARGET_DIR
+mkdir -p $GOST_TARGET_DIR
+mkdir -p $CHR_TARGET_DIR
+mkdir -p $MS_TARGET_DIR
+
+mkdir -p $BINDIR
+
+# Copy native messaging host manifest.
+cp $DIR/$HOST_NAME $TARGET_DIR
+cp $DIR/$FF_HOST_NAME $FF_TARGET_DIR/$HOST_NAME
+cp $DIR/$HOST_NAME $YA_TARGET_DIR
+cp $DIR/$HOST_NAME $GOST_TARGET_DIR
+cp $DIR/$HOST_NAME $CHR_TARGET_DIR
+cp $DIR/$HOST_NAME $MS_TARGET_DIR
+cp $DIR/$FILE $BINDIR
+cp $DIR/$LIBFILE $BINDIR
+
+# Update host path in the manifest.
+HOST_PATH=$BINDIR/$FILE
+sed -i -e "s|HOST_PATH|$HOST_PATH|g" $TARGET_DIR/$HOST_NAME
+sed -i -e "s|HOST_PATH|$HOST_PATH|g" $FF_TARGET_DIR/$HOST_NAME
+sed -i -e "s|HOST_PATH|$HOST_PATH|g" $YA_TARGET_DIR/$HOST_NAME
+sed -i -e "s|HOST_PATH|$HOST_PATH|g" $GOST_TARGET_DIR/$HOST_NAME
+sed -i -e "s|HOST_PATH|$HOST_PATH|g" $CHR_TARGET_DIR/$HOST_NAME
+sed -i -e "s|HOST_PATH|$HOST_PATH|g" $MS_TARGET_DIR/$HOST_NAME
+
+# Set permissions for the manifest so that all users can read it.
+chmod o+r $TARGET_DIR/$HOST_NAME
+chmod o+r $FF_TARGET_DIR/$HOST_NAME
+chmod o+r $YA_TARGET_DIR/$HOST_NAME
+chmod o+r $GOST_TARGET_DIR/$HOST_NAME
+chmod o+r $CHR_TARGET_DIR/$HOST_NAME
+chmod o+r $MS_TARGET_DIR/$HOST_NAME
+
+echo Native messaging host $HOST_NAME has been installed.

@@ -1,0 +1,25 @@
+HKCR
+{
+    AddIn.AddInCOM.1 = s 'AddInCOM Class'
+    {
+        CLSID = s '{F5ABA088-B6BF-46C1-B63C-950F50AD5544}'
+    }
+    AddIn.AddInCOM = s 'AddInCOM Class'
+    {
+        CLSID = s '{F5ABA088-B6BF-46C1-B63C-950F50AD5544}'
+        CurVer = s 'AddIn.AddInCOM.1'
+    }
+    NoRemove CLSID
+    {
+        ForceRemove {F5ABA088-B6BF-46C1-B63C-950F50AD5544} = s 'AddInCOM Class'
+        {
+            ProgID = s 'AddIn.AddInCOM.1'
+            VersionIndependentProgID = s 'AddIn.AddInCOM'
+            InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Apartment'
+            }
+            'TypeLib' = s '{854E9F5E-C698-4D33-9257-862F95E73131}'
+        }
+    }
+}

@@ -1,0 +1,27 @@
+﻿
+#cmakedefine ADDNVER "@ADDNVER@"
+#cmakedefine MIMETYPE "@MIMETYPE@"
+#cmakedefine ADDNCHROME "@ADDNCHROME@"
+#cmakedefine ADDNNATIVE "@ADDNNATIVE@"
+#cmakedefine ADDNIE "@ADDNIE@"
+#cmakedefine OS "@OS@"
+#cmakedefine ARCH "@ARCH@"
+#cmakedefine ARCHSUFFIX "@ARCHSUFFIX@"
+#cmakedefine EXESUFFIX "@EXESUFFIX@"
+#cmakedefine LIBSUFFIX "@LIBSUFFIX@"
+#cmakedefine LIBPREFIX "@LIBPREFIX@"
+
+#ifndef EXESUFFIX
+#define EXESUFFIX ""
+#endif // !EXESUFFIX
+
+#ifndef LIBPREFIX
+#define LIBPREFIX ""
+#endif // !LIBPREFIX
+
+#ifndef ARCHSUFFIX
+#define ARCHSUFFIX ""
+#endif //ARCHSUFFIX
+
+#cmakedefine COM_TYPE 1
+#cmakedefine COMP_EXTERNAL 1
