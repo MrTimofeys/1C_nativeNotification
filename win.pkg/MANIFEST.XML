@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<bundle xmlns="http://v8.1c.ru/8.2/addin/bundle">
+  <component os="Windows" path="AddInChromeSetup32.exe" type="plugin" object="com.mycompany.enterprise.addin.example" arch="i386" client="Firefox" clientVersion="40.*"/> 
+  <component os="Windows" path="AddInChromeSetup64.exe" type="plugin" object="com.mycompany.enterprise.addin.example" arch="x86_64" client="Firefox" clientVersion="40.*"/>
+  <component os="Linux" path="AddInChromeSetupLin32.sh" type="plugin" object="com.mycompany.enterprise.addin.example" arch="i386" client="Firefox" clientVersion="40.*"/>
+  <component os="Linux" path="AddInChromeSetupLin64.sh" type="plugin" object="com.mycompany.enterprise.addin.example" arch="x86_64" client="Firefox" clientVersion="40.*"/>
+  <component os="Linux" path="AddInChromeSetupLinARM64.sh" type="plugin" object="com.mycompany.enterprise.addin.example" arch="ARM64" client="Firefox" clientVersion="40.*"/>
+  <component os="Linux" path="AddInChromeSetupLinE2K-8C.sh" type="plugin" object="com.mycompany.enterprise.addin.example" arch="E2K" client="Firefox" clientVersion="40.*"/>
+  <component os="Windows" path="AddInIESetup32.exe" type="plugin" object="AddInIE.AddInServiceEx" arch="i386" client="MSIE"/>
+  <component os="Windows" path="AddInIESetup64.exe" type="plugin" object="AddInIE.AddInServiceEx" arch="x86_64" client="MSIE"/>
+  <component os="Windows" path="AddInChromeSetup32.exe" type="plugin" object="com.mycompany.enterprise.addin.example" arch="i386" client="Chrome" />
+  <component os="Windows" path="AddInChromeSetup64.exe" type="plugin" object="com.mycompany.enterprise.addin.example" arch="x86_64" client="Chrome" />
+  <component os="Linux" path="AddInChromeSetupLin32.sh" type="plugin" object="com.mycompany.enterprise.addin.example" arch="i386" client="Chrome" />
+  <component os="Linux" path="AddInChromeSetupLin64.sh" type="plugin" object="com.mycompany.enterprise.addin.example" arch="x86_64" client="Chrome" />
+  <component os="Linux" path="AddInChromeSetupLinARM64.sh" type="plugin" object="com.mycompany.enterprise.addin.example" arch="ARM64" client="Chrome" />
+  <component os="MacOS" path="AddInChrMacOS64.pkg" type="plugin" object="com.mycompany.enterprise.addin.example" arch="x86_64" client="Chrome" />
+  <component os="Windows" path="AddInChromeSetup32.exe" type="plugin" object="com.mycompany.enterprise.addin.example" arch="i386" client="AnyChromiumBased" />
+  <component os="Windows" path="AddInChromeSetup64.exe" type="plugin" object="com.mycompany.enterprise.addin.example" arch="x86_64" client="AnyChromiumBased" />
+  <component os="Linux" path="AddInChromeSetupLin32.sh" type="plugin" object="com.mycompany.enterprise.addin.example" arch="i386" client="AnyChromiumBased" />
+  <component os="Linux" path="AddInChromeSetupLin64.sh" type="plugin" object="com.mycompany.enterprise.addin.example" arch="x86_64" client="AnyChromiumBased" />
+  <component os="Linux" path="AddInChromeSetupLinARM64.sh" type="plugin" object="com.mycompany.enterprise.addin.example" arch="ARM64" client="AnyChromiumBased" />
+  <component os="Linux" path="AddInChromeSetupLinE2K-8C.sh" type="plugin" object="com.mycompany.enterprise.addin.example" arch="E2K" client="AnyChromiumBased" />
+  <component os="MacOS" path="AddInChrMacOS64.pkg" type="plugin" object="com.mycompany.enterprise.addin.example" arch="x86_64" client="AnyChromiumBased" />
+  <component os="MacOS" path="AddInChrMacOS64.pkg" type="plugin" object="com.mycompany.enterprise.addin.example" arch="x86_64" client="Firefox" />
+  <component os="MacOS" path="AddInSafMacOS32.pkg" type="plugin" object="application/component-example-1" arch="i386" client="Safari" />
+  <component os="MacOS" path="AddInChrMacOSARM64.pkg" type="plugin" object="com.mycompany.enterprise.addin.example" arch="ARM64" client="AnyChromiumBased" />
+  <component os="MacOS" path="AddInChrMacOSARM64.pkg" type="plugin" object="com.mycompany.enterprise.addin.example" arch="ARM64" client="Firefox" />
+  <component os="MacOS" path="AddInSafMacOSARM64.pkg" type="plugin" object="application/component-example-1" arch="ARM64" client="Safari" />
+  <component os="Windows" path="AddInNativeWin32_01.dll" type="native" arch="i386"/>
+  <component os="Windows" path="AddInNativeWin64_01.dll" type="native" arch="x86_64"/>
+  <component os="Linux" path="libAddInNativeLin32_01.so" type="native" arch="i386"/>
+  <component os="Linux" path="libAddInNativeLin64_01.so" type="native" arch="x86_64"/>
+  <component os="Linux" path="libAddInNativeLinARM64_01.so" type="native" arch="ARM64"/>
+  <component os="Linux" path="libAddInNativeLinE2K-8C_01.so" type="native" arch="E2K"/>
+  <component os="MacOS" path="libAddInNativeMac64_01.dylib" type="native" arch="x86_64"/>
+  <component os="MacOS" path="libAddInNativeMacARM64_01.dylib" type="native" arch="ARM64"/>
+</bundle>

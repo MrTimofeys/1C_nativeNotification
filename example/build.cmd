@@ -1,9 +1,9 @@
 @echo off
 
 cmake -E echo Set Visual Studio version and toolset
-SET VS_VER=15
-SET VS_YEAR=2017
-SET VS_TOOLSET=v141_xp
+SET VS_VER=18
+SET VS_YEAR=2026
+SET VS_TOOLSET=v145
 SET BUILD_CONFIG=Release
 
 if "%1"=="" goto StartBuild
@@ -79,8 +79,10 @@ exit /B 0
 :FailConfig
 cmake -E echo ---------------------------------------------------
 cmake -E echo Error configure targets
+pause
 exit /B 1
 :Fail
 cmake -E echo ---------------------------------------------------
 cmake -E echo Error building targets
+pause
 exit /B 1

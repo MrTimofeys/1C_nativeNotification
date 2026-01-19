@@ -5,12 +5,12 @@ cmake_minimum_required(VERSION 3.18...3.31 FATAL_ERROR)
 
 project(${Addn_Chrome})
 
-if (NOT UNIX)
-    if(NOT "${CMAKE_GENERATOR_TOOLSET}" STREQUAL "${VS_TOOLSET_FOR_BROWSERS_REQUIRED}")
-        message(WARNING "Building ${PROJECT_NAME} disabled! Supported Visual Studio: 15 (v140_xp), 14 (v140_xp), 15 (v140_xp) or above with v140_xp toolset")
-        RETURN()
-    endif()
-endif(NOT UNIX)
+#if (NOT UNIX)
+#    if(NOT "${CMAKE_GENERATOR_TOOLSET}" STREQUAL "${VS_TOOLSET_FOR_BROWSERS_REQUIRED}")
+#        message(WARNING "Building ${PROJECT_NAME} disabled! Supported Visual Studio: 15 (v140_xp), 14 (v140_xp), 15 (v140_xp) or #above with v140_xp toolset")
+#        RETURN()
+#    endif()
+#endif(NOT UNIX)
 
 set(AddInChrBuild TRUE PARENT_SCOPE)
 set(COMMON_NAME ${PROJECT_NAME}$CACHE{MySuffix1}$CACHE{MySuffix2})

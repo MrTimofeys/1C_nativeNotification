@@ -6,9 +6,9 @@ AddInComponentType typeComponent = eAddInCom;
 #else
 AddInComponentType typeComponent = eAddInNative;
 #endif
-const char *nameFilePrj = AddInChrWin32.exe;
+const char *nameFilePrj = "AddInChrWin32.exe";
 #ifndef COMP_EXTERNAL
-const char *nameFileComponent = AddInNative.dll;
+const char *nameFileComponent = "AddInNative.dll";
 #else
-const char *nameFileComponent = ADDNNATIVE;
+const char *nameFileComponent = "ADDNNATIVE";
 #endif

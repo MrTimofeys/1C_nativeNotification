@@ -1,14 +1,14 @@
-﻿
+﻿#define MINIAUDIO_IMPLEMENTATION
+#include "miniaudio.h"
+#include "Notification.h"
+
 #include "stdafx.h"
 #include "AddInNative.h"
+
 #include <string>
 #include <clocale>
 #include <thread>
 #include <chrono>
-
-#define MINIAUDIO_IMPLEMENTATION
-#include "miniaudio.h"
-#include "Notification.h"
 
 #define TIME_LEN 34
 #define ePropLast 0 // !!! Количество свойств !!!
@@ -34,9 +34,9 @@ void data_callback(ma_device* pDevice, void* pOutput, const void* pInput, ma_uin
 }
 
 static wchar_t *g_MethodNames[] = {L"PlayNotification" };
-static wchar_t *g_MethodNamesRu[] = {L"ПереместитьОкноВПозициюКаретки", L"Выполнить", L"ВоспроизвестиУведомление"};
+static wchar_t *g_MethodNamesRu[] = {L"ВоспроизвестиУведомление"};
 
-static const wchar_t g_kClassNames[] = L"CAddInNative";
+static const wchar_t g_kClassNames[] = L"AddInNative";
 static IAddInDefBase *pAsyncEvent = NULL;
 
 uint32_t convToShortWchar(WCHAR_T** Dest, const wchar_t* Source, uint32_t len = 0);
@@ -52,6 +52,16 @@ long GetClassObject(const WCHAR_T* wsName, IComponentBase** pInterface)
         return (long)*pInterface;
     }
     return 0;
+}
+//---------------------------------------------------------------------------//
+AppCapabilities SetPlatformCapabilities(const AppCapabilities capabilities)
+{
+    return eAppCapabilities1;
+}
+//---------------------------------------------------------------------------//
+AttachType GetAttachType()
+{
+    return eCanAttachAny;
 }
 //---------------------------------------------------------------------------//
 long DestroyObject(IComponentBase** pIntf)
@@ -243,7 +253,7 @@ bool CAddInNative::GetParamDefValue(const long lMethodNum, const long lParamNum,
     switch(lMethodNum)
     {
     case eMethPlayNotification:
-        break;
+        return false;
 	default:
         return false;
     }
@@ -261,6 +271,22 @@ bool CAddInNative::HasRetVal(const long lMethodNum)
         return false;
     }
 }
+//---------------------------------------------------------------------------//
+void ADDIN_API CAddInNative::SetLocale(const WCHAR_T* loc)
+{
+#ifndef __linux__
+    _wsetlocale(LC_ALL, (const wchar_t*)loc);
+#else
+    //We convert in char* char_locale
+    //also we establish locale
+    //setlocale(LC_ALL, char_locale);
+#endif
+}
+
+void ADDIN_API CAddInNative::SetUserInterfaceLanguageCode(const WCHAR_T* lang)
+{
+    lang = u"ru";
+}
 
 //---------------------------------------------------------------------------//
 bool CAddInNative::CallAsProc(const long lMethodNum,
@@ -270,6 +296,9 @@ bool CAddInNative::CallAsProc(const long lMethodNum,
     { 
     case eMethPlayNotification:
     {
+
+        MessageBoxA(GetDesktopWindow(), "test", "test", MB_OK);
+
         ma_decoder decoder_local;
 
         // Инициализация декодера

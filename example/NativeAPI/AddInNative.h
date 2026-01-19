@@ -37,28 +37,29 @@ public:
     virtual bool ADDIN_API IsPropWritable(const long lPropNum);
     virtual long ADDIN_API GetNMethods();
     virtual long ADDIN_API FindMethod(const WCHAR_T* wsMethodName);
-    virtual const WCHAR_T* ADDIN_API GetMethodName(const long lMethodNum, 
-                            const long lMethodAlias);
+    virtual const WCHAR_T* ADDIN_API GetMethodName(const long lMethodNum,
+        const long lMethodAlias);
     virtual long ADDIN_API GetNParams(const long lMethodNum);
     virtual bool ADDIN_API GetParamDefValue(const long lMethodNum, const long lParamNum,
-                            tVariant *pvarParamDefValue);   
+        tVariant* pvarParamDefValue);
     virtual bool ADDIN_API HasRetVal(const long lMethodNum);
     virtual bool ADDIN_API CallAsProc(const long lMethodNum,
-                    tVariant* paParams, const long lSizeArray);
+        tVariant* paParams, const long lSizeArray);
 
 
-	virtual bool ADDIN_API CallAsFunc(const long lMethodNum,
-                tVariant* pvarRetValue, tVariant* paParams, const long lSizeArray);
+    virtual bool ADDIN_API CallAsFunc(const long lMethodNum,
+        tVariant* pvarRetValue, tVariant* paParams, const long lSizeArray);
     // LocaleBase
     virtual void ADDIN_API SetLocale(const WCHAR_T* loc);
-    
+    virtual void ADDIN_API SetUserInterfaceLanguageCode(const WCHAR_T* lang);
+
 private:
     long findName(wchar_t* names[], const wchar_t* name, const uint32_t size) const;
-    void addError(uint32_t wcode, const wchar_t* source, 
-                    const wchar_t* descriptor, long code);
+    void addError(uint32_t wcode, const wchar_t* source,
+        const wchar_t* descriptor, long code);
     // Attributes
-    IAddInDefBase      *m_iConnect;
-    IMemoryManager     *m_iMemory;
+    IAddInDefBase* m_iConnect;
+    IMemoryManager* m_iMemory;
 
     bool                m_boolEnabled;
     uint32_t            m_uiTimer;
