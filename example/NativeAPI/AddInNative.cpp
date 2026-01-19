@@ -289,140 +289,66 @@ void ADDIN_API CAddInNative::SetUserInterfaceLanguageCode(const WCHAR_T* lang)
 }
 
 //---------------------------------------------------------------------------//
-bool CAddInNative::CallAsProc(const long lMethodNum,
-                    tVariant* paParams, const long lSizeArray)
-{ 
-	switch (lMethodNum)
-    { 
+bool CAddInNative::CallAsProc(const long lMethodNum, tVariant* paParams, const long lSizeArray)
+{
+    switch (lMethodNum) {
     case eMethPlayNotification:
     {
+        // 1. Проверка MP3
+        if (!notification_mp3 || notification_mp3_len == 0) {
+            MessageBoxA(GetDesktopWindow(), "MP3 данные отсутствуют!", "ERROR", MB_OK);
+            return false;
+        }
 
-        MessageBoxA(GetDesktopWindow(), "test", "test", MB_OK);
-
-        ma_decoder decoder_local;
+        // 2. УПРОЩЕННАЯ miniaudio БЕЗ new/delete/memset
+        ma_decoder decoder;
+        ma_device device;
 
         // Инициализация декодера
-        ma_result result = ma_decoder_init_memory(
-            notification_mp3,
-            notification_mp3_len,
-            NULL,
-            &decoder_local
-        );
-
+        ma_result result = ma_decoder_init_memory(notification_mp3, notification_mp3_len, NULL, &decoder);
         if (result != MA_SUCCESS) {
+            MessageBoxA(GetDesktopWindow(), "Decoder FAIL", "MINIAUDIO", MB_OK);
             return false;
         }
 
-        // Получаем длительность
-        ma_uint64 totalFrames;
-        ma_decoder_get_length_in_pcm_frames(&decoder_local, &totalFrames);
+        // Настройка устройства
+        ma_device_config config = ma_device_config_init(ma_device_type_playback);
+        config.playback.format = decoder.outputFormat;
+        config.playback.channels = decoder.outputChannels;
+        config.sampleRate = decoder.outputSampleRate;
+        config.dataCallback = data_callback;
+        config.pUserData = &decoder;
 
-        // Вычисляем длительность в миллисекундах
-        ma_uint32 sampleRate = decoder_local.outputSampleRate;
-        ma_uint32 durationMs = (ma_uint32)((totalFrames * 1000) / sampleRate);
-
-        // Сбрасываем декодер
-        ma_decoder_uninit(&decoder_local);
-
-        // Теперь запускаем асинхронно с глобальными переменными
-        if (g_isAudioInitialized) {
-            if (g_device) {
-                ma_device_stop(g_device);
-                ma_device_uninit(g_device);
-                delete g_device;
-                g_device = NULL;
-            }
-            if (g_decoder) {
-                ma_decoder_uninit(g_decoder);
-                delete g_decoder;
-                g_decoder = NULL;
-            }
-            g_isAudioInitialized = false;
-        }
-
-        g_decoder = new (std::nothrow) ma_decoder();
-        g_device = new (std::nothrow) ma_device();
-
-        if (!g_decoder || !g_device) {
-            if (g_decoder) delete g_decoder;
-            if (g_device) delete g_device;
-            g_decoder = NULL;
-            g_device = NULL;
-            return false;
-        }
-
-        memset(g_decoder, 0, sizeof(ma_decoder));
-        memset(g_device, 0, sizeof(ma_device));
-
-        result = ma_decoder_init_memory(
-            notification_mp3,
-            notification_mp3_len,
-            NULL,
-            g_decoder
-        );
-
+        // Инициализация устройства
+        result = ma_device_init(NULL, &config, &device);
         if (result != MA_SUCCESS) {
-            delete g_decoder;
-            delete g_device;
-            g_decoder = NULL;
-            g_device = NULL;
+            ma_decoder_uninit(&decoder);
+            MessageBoxA(GetDesktopWindow(), "Device init FAIL", "MINIAUDIO", MB_OK);
             return false;
         }
 
-        ma_device_config deviceConfig = ma_device_config_init(ma_device_type_playback);
-        deviceConfig.playback.format = g_decoder->outputFormat;
-        deviceConfig.playback.channels = g_decoder->outputChannels;
-        deviceConfig.sampleRate = g_decoder->outputSampleRate;
-        deviceConfig.dataCallback = data_callback;
-        deviceConfig.pUserData = g_decoder;
-
-        result = ma_device_init(NULL, &deviceConfig, g_device);
+        // Запуск
+        result = ma_device_start(&device);
         if (result != MA_SUCCESS) {
-            ma_decoder_uninit(g_decoder);
-            delete g_decoder;
-            delete g_device;
-            g_decoder = NULL;
-            g_device = NULL;
+            ma_device_uninit(&device);
+            ma_decoder_uninit(&decoder);
+            MessageBoxA(GetDesktopWindow(), "Device start FAIL", "MINIAUDIO", MB_OK);
             return false;
         }
 
-        result = ma_device_start(g_device);
-        if (result != MA_SUCCESS) {
-            ma_device_uninit(g_device);
-            ma_decoder_uninit(g_decoder);
-            delete g_decoder;
-            delete g_device;
-            g_decoder = NULL;
-            g_device = NULL;
-            return false;
-        }
+        // Ждем 4 секунды (должно хватить)
+        Sleep(4000);
 
-        g_isAudioInitialized = true;
+        // Очистка
+        ma_device_uninit(&device);
+        ma_decoder_uninit(&decoder);
 
-        // ← ЖДЁМ ОКОНЧАНИЯ ВОСПРОИЗВЕДЕНИЯ (синхронно)
-        std::this_thread::sleep_for(std::chrono::milliseconds(durationMs + 100));
-        // Длительность звука + 100мс запас
-
-        // Останавливаем и очищаем
-        if (g_device) {
-            ma_device_stop(g_device);
-            ma_device_uninit(g_device);
-            delete g_device;
-            g_device = NULL;
-        }
-        if (g_decoder) {
-            ma_decoder_uninit(g_decoder);
-            delete g_decoder;
-            g_decoder = NULL;
-        }
-        g_isAudioInitialized = false;
-
+        MessageBoxA(GetDesktopWindow(), "Звук завершен!", "SUCCESS", MB_OK);
         return true;
     }
     default:
         return false;
     }
-
 }
 
 
