@@ -294,61 +294,40 @@ bool CAddInNative::CallAsProc(const long lMethodNum, tVariant* paParams, const l
     switch (lMethodNum) {
     case eMethPlayNotification:
     {
-        // 1. Проверка MP3
-        if (!notification_mp3 || notification_mp3_len == 0) {
-            MessageBoxA(GetDesktopWindow(), "MP3 данные отсутствуют!", "ERROR", MB_OK);
-            return false;
-        }
+        std::thread([]() {
+            ma_decoder decoder;
+            ma_device device;
 
-        // 2. УПРОЩЕННАЯ miniaudio БЕЗ new/delete/memset
-        ma_decoder decoder;
-        ma_device device;
+            if (ma_decoder_init_memory(notification_mp3, notification_mp3_len, NULL, &decoder) != MA_SUCCESS) {
+                return;
+            }
 
-        // Инициализация декодера
-        ma_result result = ma_decoder_init_memory(notification_mp3, notification_mp3_len, NULL, &decoder);
-        if (result != MA_SUCCESS) {
-            MessageBoxA(GetDesktopWindow(), "Decoder FAIL", "MINIAUDIO", MB_OK);
-            return false;
-        }
+            ma_device_config config = ma_device_config_init(ma_device_type_playback);
+            config.playback.format = decoder.outputFormat;
+            config.playback.channels = decoder.outputChannels;
+            config.sampleRate = decoder.outputSampleRate;
+            config.dataCallback = data_callback;
+            config.pUserData = &decoder;
 
-        // Настройка устройства
-        ma_device_config config = ma_device_config_init(ma_device_type_playback);
-        config.playback.format = decoder.outputFormat;
-        config.playback.channels = decoder.outputChannels;
-        config.sampleRate = decoder.outputSampleRate;
-        config.dataCallback = data_callback;
-        config.pUserData = &decoder;
+            if (ma_device_init(NULL, &config, &device) == MA_SUCCESS) {
+                ma_device_start(&device);
 
-        // Инициализация устройства
-        result = ma_device_init(NULL, &config, &device);
-        if (result != MA_SUCCESS) {
+                // ✅ Кроссплатформенный сон
+#ifdef _WIN32
+                Sleep(4000);
+#else
+                std::this_thread::sleep_for(std::chrono::milliseconds(4000));
+#endif
+
+                ma_device_uninit(&device);
+            }
             ma_decoder_uninit(&decoder);
-            MessageBoxA(GetDesktopWindow(), "Device init FAIL", "MINIAUDIO", MB_OK);
-            return false;
-        }
+            }).detach();
 
-        // Запуск
-        result = ma_device_start(&device);
-        if (result != MA_SUCCESS) {
-            ma_device_uninit(&device);
-            ma_decoder_uninit(&decoder);
-            MessageBoxA(GetDesktopWindow(), "Device start FAIL", "MINIAUDIO", MB_OK);
-            return false;
-        }
-
-        // Ждем 4 секунды (должно хватить)
-        Sleep(4000);
-
-        // Очистка
-        ma_device_uninit(&device);
-        ma_decoder_uninit(&decoder);
-
-        MessageBoxA(GetDesktopWindow(), "Звук завершен!", "SUCCESS", MB_OK);
         return true;
     }
-    default:
-        return false;
     }
+    return false;
 }
 
 
