@@ -1,0 +1,10 @@
+C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/ALL_BUILD.dir
+C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/ZERO_CHECK.dir
+C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir
+C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/ALL_BUILD.dir
+C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/localization/CMakeFiles/localization.dir
+C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/localization/CMakeFiles/ALL_BUILD.dir
+C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/AddInChrome/CMakeFiles/AddInChr.dir
+C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/AddInChrome/CMakeFiles/ALL_BUILD.dir
+C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/AddInChromeSetup/CMakeFiles/AddInChromeSetup.dir
+C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/AddInChromeSetup/CMakeFiles/ALL_BUILD.dir

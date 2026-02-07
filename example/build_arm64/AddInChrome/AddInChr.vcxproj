@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>ARM64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F70E1714-E615-34EC-BF6C-D00FB7B54E06}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <XPDeprecationWarning>false</XPDeprecationWarning>
+    <WindowsSDKDesktopARM64Support>true</WindowsSDKDesktopARM64Support>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>ARM64</Platform>
+    <ProjectName>AddInChr</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:\Users\tmel\Desktop\1C_nativeNotification\example\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">AddInChr.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">AddInChrWin64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:\Users\tmel\Desktop\1C_nativeNotification\example\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">AddInChr.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">AddInChrWin64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copy AddInChr</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E rename C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Release/AddInChrWin64.exe C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/AddInChrWin64.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\tmel\Desktop\1C_nativeNotification\lib\1CEAdnWebChrWin64.lib;RpcRT4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/tmel/Desktop/1C_nativeNotification/example/../lib;C:/Users/tmel/Desktop/1C_nativeNotification/example/../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Release/AddInChrWin64.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/debug_info/Release/AddInChrWin64.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome\AddInChrWin64.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copy AddInChr</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E rename C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Debug/AddInChrWin64.exe C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/AddInChrWin64.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\tmel\Desktop\1C_nativeNotification\lib\1CEAdnWebChrWin64.lib;RpcRT4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/tmel/Desktop/1C_nativeNotification/example/../lib;C:/Users/tmel/Desktop/1C_nativeNotification/example/../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Debug/AddInChrWin64.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/debug_info/Debug/AddInChrWin64.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome\AddInChrWin64.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Building Custom Rule C:/Users/tmel/Desktop/1C_nativeNotification/example/AddInChrome/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/tmel/Desktop/1C_nativeNotification/example -BC:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64 --check-stamp-file C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/AddInChrome/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePrintHelpers.cmake;C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome\sources.cmake;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\CMakeFiles\cmake.verify_globs;C:\Users\tmel\Desktop\1C_nativeNotification\example\conf_data_in\AddInChrome.rc.in;C:\Users\tmel\Desktop\1C_nativeNotification\example\conf_data_in\Addn.exe.manifest.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Building Custom Rule C:/Users/tmel/Desktop/1C_nativeNotification/example/AddInChrome/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/tmel/Desktop/1C_nativeNotification/example -BC:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64 --check-stamp-file C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/AddInChrome/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePrintHelpers.cmake;C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome\sources.cmake;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\CMakeFiles\cmake.verify_globs;C:\Users\tmel\Desktop\1C_nativeNotification\example\conf_data_in\AddInChrome.rc.in;C:\Users\tmel\Desktop\1C_nativeNotification\example\conf_data_in\Addn.exe.manifest.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome\config.cpp" />
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome\config.h" />
+    <ResourceCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome\AddInChrome.rc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\ZERO_CHECK.vcxproj">
+      <Project>{34977329-F23A-3896-97BA-B21151677BEB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI\AddInNative.vcxproj">
+      <Project>{C8543FBE-6FD5-3B8B-88EF-BD5D3D87E114}</Project>
+      <Name>AddInNative</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChrome\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChrome\AddInChrome.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{59709715-AF0B-359D-87AA-DD1A4BD0054A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{96977C1F-DDAD-3F7A-9B9F-3EBD301126A4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

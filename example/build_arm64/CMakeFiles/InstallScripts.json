@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/cmake_install.cmake",
+		"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/cmake_install.cmake",
+		"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/localization/cmake_install.cmake",
+		"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/AddInChrome/cmake_install.cmake",
+		"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/AddInChromeSetup/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

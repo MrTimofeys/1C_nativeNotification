@@ -14,6 +14,7 @@ endif()
 include(CMakePrintHelpers)
 
 project (AddIn)
+option(ONLY_NATIVEAPI "Build only NativeAPI target(s)" OFF)
 list(APPEND CMAKE_VS_GLOBALS "XPDeprecationWarning=false")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}")
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -186,9 +187,12 @@ endif()
 set(THREADS_PREFER_PTHREAD_FLAG TRUE)
 find_package(Threads REQUIRED)
 
-add_subdirectory (NativeAPI)
-add_subdirectory (AddInChrome)
-add_subdirectory (AddInChromeSetup)
+add_subdirectory(NativeAPI)
+
+if(NOT ONLY_NATIVEAPI)
+    add_subdirectory(AddInChrome)
+    add_subdirectory(AddInChromeSetup)
+endif()
 
 if(COMP_EXTERNAL)
     string(APPEND manifest_begin ${manifest_end})

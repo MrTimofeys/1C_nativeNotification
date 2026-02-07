@@ -1,0 +1,20 @@
+﻿  1>Build setup for Google Chrome and Mozilla Firefox...
+  Processing config: C:\Program Files (x86)\NSIS\nsisconf.nsh
+  Processing script file: "AddInChromeSetup.nsi" (ACP)
+  
+  Processed 1 file, writing output (x86-unicode):
+  
+  Output: "C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChromeSetup\AddInChromeSetup64.exe"
+  Install: 1 page (64 bytes), 1 section (1 required) (2072 bytes), 19 instructions (532 bytes), 65 strings (3466 bytes), 1 language table (198 bytes).
+  Uninstall: 2 pages (192 bytes), 1 section (2072 bytes), 42 instructions (1176 bytes), 63 strings (2854 bytes), 1 language table (218 bytes).
+  
+  Using zlib compression.
+  
+  EXE header size:               38912 / 39936 bytes
+  Install code:                   1333 / 6724 bytes
+  Install data:                 626997 / 1313423 bytes
+  Uninstall code+data:            1592 / 2092 bytes
+  CRC (0x18DC5F7B):                  4 / 4 bytes
+  
+  Total size:                   668838 / 1362179 bytes (49.1%)
+  Building Custom Rule C:/Users/tmel/Desktop/1C_nativeNotification/example/AddInChromeSetup/CMakeLists.txt

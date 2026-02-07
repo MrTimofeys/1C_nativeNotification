@@ -1,0 +1,13 @@
+﻿  cmake_pch.cxx
+  localization.cpp
+  dllmain.cpp
+  AddInNative.cpp
+C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\AddInNative.cpp(52,16): warning C4311: приведение типов: усечение указателя из "IComponentBase *" в "long"
+  (compiling source file '../../NativeAPI/AddInNative.cpp')
+  
+  stdafx.cpp
+  Создание кода...
+     Создается библиотека C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Release/AddInNativeARM64_01.lib и объект C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Release/AddInNativeARM64_01.exp
+AddInNativeARM64_01.exp : warning LNK4070: директива /OUT:AddInNativeWin64_01.DLL в .EXP отличается от имени выходного файла "C:\Users\tmel\Desktop\1C_nativeNotification\example\bin\Release\AddInNativeARM64_01.dll"; директива игнорируется
+  AddInNative.vcxproj -> C:\Users\tmel\Desktop\1C_nativeNotification\example\bin\Release\AddInNativeARM64_01.dll
+  Copy AddInNative

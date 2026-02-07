@@ -24,6 +24,7 @@ cmake -E remove_directory ./debug_info
 cmake -E remove_directory ./pkg
 cmake -E remove_directory ./build64
 cmake -E remove_directory ./build32
+cmake -E remove_directory ./buildarm64
 cmake -E remove -f %ARCH_NAME%
 
 cmake -E echo "Build 64"
@@ -33,6 +34,14 @@ if ERRORLEVEL 1 goto :FailConfig
 cmake --build build64 --config %BUILD_CONFIG%
 if ERRORLEVEL 1 goto :Fail
 cmake -E remove_directory build64
+
+cmake -E echo "Build ARM64 (NativeAPI only)"
+cmake -S . -B buildarm64 -G "Visual Studio %VS_VER% %VS_YEAR%" -A ARM64 -DCMAKE_BUILD_TYPE=%BUILD_CONFIG% -DCMAKE_GENERATOR_TOOLSET=%VS_TOOLSET% -DONLY_NATIVEAPI=ON %FROM_ZIP%
+if ERRORLEVEL 1 goto :FailConfig
+
+cmake --build buildarm64 --config %BUILD_CONFIG%
+if ERRORLEVEL 1 goto :Fail
+cmake -E remove_directory buildarm64
 
 cmake -E echo "Build 32"
 cmake -S . -B build32 -G "Visual Studio %VS_VER% %VS_YEAR%" -A Win32 -DCMAKE_BUILD_TYPE=%BUILD_CONFIG% -DCMAKE_GENERATOR_TOOLSET=%VS_TOOLSET% %FROM_ZIP%

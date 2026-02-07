@@ -1,0 +1,10 @@
+^C:\USERS\TMEL\DESKTOP\1C_NATIVENOTIFICATION\EXAMPLE\BUILD_ARM64\CMAKEFILES\3CAAE49856AA501A18207F08C6342789\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/tmel/Desktop/1C_nativeNotification/example -BC:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/AddIn.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

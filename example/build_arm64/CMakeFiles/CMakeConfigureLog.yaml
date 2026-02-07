@@ -1,0 +1,1441 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Версия MSBuild 18.0.5+e22287bf1 для .NET Framework
+      Сборка начата 22.01.2026 14:52:40.
+      
+      Проект "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\4.2.1\\CompilerIdC\\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
+      PrepareForBuild:
+        Создание каталога "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Создание каталога "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Создание "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        Обращение к "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:ARM64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\4.2.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostarm64\\arm64\\cl.exe
+      FinalizeBuildStatus:
+        Файл "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" удаляется.
+        Обращение к "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Сборка проекта "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\4.2.1\\CompilerIdC\\CompilerIdC.vcxproj" завершена (целевые объекты по умолчанию).
+      
+      Сборка успешно завершена.
+          Предупреждений: 0
+          Ошибок: 0
+      
+      Прошло времени 00:00:00.35
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/4.2.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Apache24/bin/"
+      - "C:/Program Files (x86)/NSIS/Bin/"
+      - "C:/Program Files (x86)/NSIS/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Apache24/bin/"
+      - "C:/Program Files (x86)/NSIS/Bin/"
+      - "C:/Program Files (x86)/NSIS/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/lld-link"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/lld-link.com"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/lld-link.exe"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Apache24/bin/lld-link.com"
+      - "C:/Apache24/bin/lld-link.exe"
+      - "C:/Apache24/bin/lld-link"
+      - "C:/Program Files (x86)/NSIS/Bin/lld-link.com"
+      - "C:/Program Files (x86)/NSIS/Bin/lld-link.exe"
+      - "C:/Program Files (x86)/NSIS/Bin/lld-link"
+      - "C:/Program Files (x86)/NSIS/lld-link.com"
+      - "C:/Program Files (x86)/NSIS/lld-link.exe"
+      - "C:/Program Files (x86)/NSIS/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Apache24/bin/"
+      - "C:/Program Files (x86)/NSIS/Bin/"
+      - "C:/Program Files (x86)/NSIS/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Apache24/bin/"
+      - "C:/Program Files (x86)/NSIS/Bin/"
+      - "C:/Program Files (x86)/NSIS/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/mt"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/mt.com"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/mt.exe"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Apache24/bin/mt.com"
+      - "C:/Apache24/bin/mt.exe"
+      - "C:/Apache24/bin/mt"
+      - "C:/Program Files (x86)/NSIS/Bin/mt.com"
+      - "C:/Program Files (x86)/NSIS/Bin/mt.exe"
+      - "C:/Program Files (x86)/NSIS/Bin/mt"
+      - "C:/Program Files (x86)/NSIS/mt.com"
+      - "C:/Program Files (x86)/NSIS/mt.exe"
+      - "C:/Program Files (x86)/NSIS/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Apache24/bin/"
+      - "C:/Program Files (x86)/NSIS/Bin/"
+      - "C:/Program Files (x86)/NSIS/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Версия MSBuild 18.0.5+e22287bf1 для .NET Framework
+      Сборка начата 22.01.2026 14:52:40.
+      
+      Проект "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\4.2.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
+      PrepareForBuild:
+        Создание каталога "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Создание каталога "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Создание "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        Обращение к "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:ARM64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\4.2.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostarm64\\arm64\\cl.exe
+      FinalizeBuildStatus:
+        Файл "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" удаляется.
+        Обращение к "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Сборка проекта "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\4.2.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
+      
+      Сборка успешно завершена.
+          Предупреждений: 0
+          Ошибок: 0
+      
+      Прошло времени 00:00:00.34
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/4.2.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Apache24/bin/"
+      - "C:/Program Files (x86)/NSIS/Bin/"
+      - "C:/Program Files (x86)/NSIS/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostarm64/arm64/lld-link"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/lld-link.com"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/lld-link.exe"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Apache24/bin/lld-link.com"
+      - "C:/Apache24/bin/lld-link.exe"
+      - "C:/Apache24/bin/lld-link"
+      - "C:/Program Files (x86)/NSIS/Bin/lld-link.com"
+      - "C:/Program Files (x86)/NSIS/Bin/lld-link.exe"
+      - "C:/Program Files (x86)/NSIS/Bin/lld-link"
+      - "C:/Program Files (x86)/NSIS/lld-link.com"
+      - "C:/Program Files (x86)/NSIS/lld-link.exe"
+      - "C:/Program Files (x86)/NSIS/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake:580 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake:553 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Apache24/bin/"
+      - "C:/Program Files (x86)/NSIS/Bin/"
+      - "C:/Program Files (x86)/NSIS/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/AddIn/bin/"
+      - "C:/Program Files (x86)/AddIn/sbin/"
+      - "C:/Program Files (x86)/AddIn/"
+    searched_directories:
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/rc.com"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/rc.exe"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Apache24/bin/rc.com"
+      - "C:/Apache24/bin/rc.exe"
+      - "C:/Apache24/bin/rc"
+      - "C:/Program Files (x86)/NSIS/Bin/rc.com"
+      - "C:/Program Files (x86)/NSIS/Bin/rc.exe"
+      - "C:/Program Files (x86)/NSIS/Bin/rc"
+      - "C:/Program Files (x86)/NSIS/rc.com"
+      - "C:/Program Files (x86)/NSIS/rc.exe"
+      - "C:/Program Files (x86)/NSIS/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/AddIn/bin/rc.com"
+      - "C:/Program Files (x86)/AddIn/bin/rc.exe"
+      - "C:/Program Files (x86)/AddIn/bin/rc"
+      - "C:/Program Files (x86)/AddIn/sbin/rc.com"
+      - "C:/Program Files (x86)/AddIn/sbin/rc.exe"
+      - "C:/Program Files (x86)/AddIn/sbin/rc"
+      - "C:/Program Files (x86)/AddIn/rc.com"
+      - "C:/Program Files (x86)/AddIn/rc.exe"
+      - "C:/Program Files (x86)/AddIn/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/AddIn"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/AddIn"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-c4rn5p"
+      binary: "C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-c4rn5p"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-c4rn5p'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/arm64/MSBuild.exe" cmTC_f6bd8.vcxproj /p:Configuration=Debug /p:Platform=ARM64 /p:VisualStudioVersion=18.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.0.5+e22287bf1 ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 22.01.2026 14:52:41.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-c4rn5p\\cmTC_f6bd8.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-c4rn5p\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_f6bd8.dir\\Debug\\cmTC_f6bd8.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_f6bd8.dir\\Debug\\cmTC_f6bd8.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_f6bd8.dir\\Debug\\cmTC_f6bd8.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_f6bd8.dir\\Debug\\\\" /Fd"cmTC_f6bd8.dir\\Debug\\vc145.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.50.35721 ╨┤╨╗╤П ARM64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_f6bd8.dir\\Debug\\\\" /Fd"cmTC_f6bd8.dir\\Debug\\vc145.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\link.exe /OUT:"C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-c4rn5p\\Debug\\cmTC_f6bd8.exe" /INCREMENTAL /ILK:"cmTC_f6bd8.dir\\Debug\\cmTC_f6bd8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-c4rn5p/Debug/cmTC_f6bd8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-c4rn5p/Debug/cmTC_f6bd8.lib" /MACHINE:ARM64  /machine:ARM64 cmTC_f6bd8.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_f6bd8.vcxproj -> C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-c4rn5p\\Debug\\cmTC_f6bd8.exe
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_f6bd8.dir\\Debug\\cmTC_f6bd8.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_f6bd8.dir\\Debug\\cmTC_f6bd8.tlog\\cmTC_f6bd8.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-c4rn5p\\cmTC_f6bd8.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.32
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/HostArm64/arm64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/HostArm64/arm64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.50.35721.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-01w79q"
+      binary: "C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-01w79q"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-01w79q'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/arm64/MSBuild.exe" cmTC_e7165.vcxproj /p:Configuration=Debug /p:Platform=ARM64 /p:VisualStudioVersion=18.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.0.5+e22287bf1 ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 22.01.2026 14:52:42.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-01w79q\\cmTC_e7165.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-01w79q\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_e7165.dir\\Debug\\cmTC_e7165.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_e7165.dir\\Debug\\cmTC_e7165.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_e7165.dir\\Debug\\cmTC_e7165.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_e7165.dir\\Debug\\\\" /Fd"cmTC_e7165.dir\\Debug\\vc145.pdb" /external:W1 /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.50.35721 ╨┤╨╗╤П ARM64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_e7165.dir\\Debug\\\\" /Fd"cmTC_e7165.dir\\Debug\\vc145.pdb" /external:W1 /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\link.exe /OUT:"C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-01w79q\\Debug\\cmTC_e7165.exe" /INCREMENTAL /ILK:"cmTC_e7165.dir\\Debug\\cmTC_e7165.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-01w79q/Debug/cmTC_e7165.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-01w79q/Debug/cmTC_e7165.lib" /MACHINE:ARM64  /machine:ARM64 cmTC_e7165.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_e7165.vcxproj -> C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-01w79q\\Debug\\cmTC_e7165.exe
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_e7165.dir\\Debug\\cmTC_e7165.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_e7165.dir\\Debug\\cmTC_e7165.tlog\\cmTC_e7165.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-01w79q\\cmTC_e7165.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.32
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/HostArm64/arm64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/HostArm64/arm64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.50.35721.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "find-v1"
+    backtrace:
+      - "cmake/utils.cmake:18 (find_program)"
+      - "CMakeLists.txt:60 (include)"
+    mode: "program"
+    variable: "SIGN_BAT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "sign.bat"
+    candidate_directories:
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Apache24/bin/"
+      - "C:/Program Files (x86)/NSIS/Bin/"
+      - "C:/Program Files (x86)/NSIS/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/AddIn/bin/"
+      - "C:/Program Files (x86)/AddIn/sbin/"
+      - "C:/Program Files (x86)/AddIn/"
+    searched_directories:
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/sign.bat.com"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/sign.bat.exe"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/sign.bat"
+      - "C:/Windows/System32/sign.bat.com"
+      - "C:/Windows/System32/sign.bat.exe"
+      - "C:/Windows/System32/sign.bat"
+      - "C:/Windows/sign.bat.com"
+      - "C:/Windows/sign.bat.exe"
+      - "C:/Windows/sign.bat"
+      - "C:/Windows/System32/wbem/sign.bat.com"
+      - "C:/Windows/System32/wbem/sign.bat.exe"
+      - "C:/Windows/System32/wbem/sign.bat"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/sign.bat.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/sign.bat.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/sign.bat"
+      - "C:/Windows/System32/OpenSSH/sign.bat.com"
+      - "C:/Windows/System32/OpenSSH/sign.bat.exe"
+      - "C:/Windows/System32/OpenSSH/sign.bat"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/sign.bat.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/sign.bat.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/sign.bat"
+      - "C:/Program Files/Git/cmd/sign.bat.com"
+      - "C:/Program Files/Git/cmd/sign.bat.exe"
+      - "C:/Program Files/Git/cmd/sign.bat"
+      - "C:/Program Files/CMake/bin/sign.bat.com"
+      - "C:/Program Files/CMake/bin/sign.bat.exe"
+      - "C:/Program Files/CMake/bin/sign.bat"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/sign.bat.com"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/sign.bat.exe"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/sign.bat"
+      - "C:/Apache24/bin/sign.bat.com"
+      - "C:/Apache24/bin/sign.bat.exe"
+      - "C:/Apache24/bin/sign.bat"
+      - "C:/Program Files (x86)/NSIS/Bin/sign.bat.com"
+      - "C:/Program Files (x86)/NSIS/Bin/sign.bat.exe"
+      - "C:/Program Files (x86)/NSIS/Bin/sign.bat"
+      - "C:/Program Files (x86)/NSIS/sign.bat.com"
+      - "C:/Program Files (x86)/NSIS/sign.bat.exe"
+      - "C:/Program Files (x86)/NSIS/sign.bat"
+      - "C:/Program Files/bin/sign.bat.com"
+      - "C:/Program Files/bin/sign.bat.exe"
+      - "C:/Program Files/bin/sign.bat"
+      - "C:/Program Files/sbin/sign.bat.com"
+      - "C:/Program Files/sbin/sign.bat.exe"
+      - "C:/Program Files/sbin/sign.bat"
+      - "C:/Program Files/sign.bat.com"
+      - "C:/Program Files/sign.bat.exe"
+      - "C:/Program Files/sign.bat"
+      - "C:/Program Files (x86)/bin/sign.bat.com"
+      - "C:/Program Files (x86)/bin/sign.bat.exe"
+      - "C:/Program Files (x86)/bin/sign.bat"
+      - "C:/Program Files (x86)/sbin/sign.bat.com"
+      - "C:/Program Files (x86)/sbin/sign.bat.exe"
+      - "C:/Program Files (x86)/sbin/sign.bat"
+      - "C:/Program Files (x86)/sign.bat.com"
+      - "C:/Program Files (x86)/sign.bat.exe"
+      - "C:/Program Files (x86)/sign.bat"
+      - "C:/Program Files/CMake/bin/sign.bat.com"
+      - "C:/Program Files/CMake/bin/sign.bat.exe"
+      - "C:/Program Files/CMake/bin/sign.bat"
+      - "C:/Program Files/CMake/sbin/sign.bat.com"
+      - "C:/Program Files/CMake/sbin/sign.bat.exe"
+      - "C:/Program Files/CMake/sbin/sign.bat"
+      - "C:/Program Files/CMake/sign.bat.com"
+      - "C:/Program Files/CMake/sign.bat.exe"
+      - "C:/Program Files/CMake/sign.bat"
+      - "C:/Program Files (x86)/AddIn/bin/sign.bat.com"
+      - "C:/Program Files (x86)/AddIn/bin/sign.bat.exe"
+      - "C:/Program Files (x86)/AddIn/bin/sign.bat"
+      - "C:/Program Files (x86)/AddIn/sbin/sign.bat.com"
+      - "C:/Program Files (x86)/AddIn/sbin/sign.bat.exe"
+      - "C:/Program Files (x86)/AddIn/sbin/sign.bat"
+      - "C:/Program Files (x86)/AddIn/sign.bat.com"
+      - "C:/Program Files (x86)/AddIn/sign.bat.exe"
+      - "C:/Program Files (x86)/AddIn/sign.bat"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/AddIn"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/AddIn"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "CMakeLists.txt:187 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-5cx0n6"
+      binary: "C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-5cx0n6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      CMAKE_MODULE_PATH: "C:/Users/tmel/Desktop/1C_nativeNotification/example;C:/Users/tmel/Desktop/1C_nativeNotification/example/cmake"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-5cx0n6'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/arm64/MSBuild.exe" cmTC_2200a.vcxproj /p:Configuration=Debug /p:Platform=ARM64 /p:VisualStudioVersion=18.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.0.5+e22287bf1 ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 22.01.2026 14:52:42.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-5cx0n6\\cmTC_2200a.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-5cx0n6\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_2200a.dir\\Debug\\cmTC_2200a.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_2200a.dir\\Debug\\cmTC_2200a.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_2200a.dir\\Debug\\cmTC_2200a.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MTd /Fo"cmTC_2200a.dir\\Debug\\\\" /Fd"cmTC_2200a.dir\\Debug\\vc145.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-5cx0n6\\src.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.50.35721 ╨┤╨╗╤П ARM64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MTd /Fo"cmTC_2200a.dir\\Debug\\\\" /Fd"cmTC_2200a.dir\\Debug\\vc145.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-5cx0n6\\src.c"
+          src.c
+        C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-5cx0n6\\src.c(1,10): error C1083: ╨Э╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ ╨▓╨║╨╗╤О╤З╨╡╨╜╨╕╨╡: pthread.h: No such file or directory, [C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-5cx0n6\\cmTC_2200a.vcxproj]
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-5cx0n6\\cmTC_2200a.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) ╤Б ╨╛╤И╨╕╨▒╨║╨╛╨╣.
+        
+        ╨Ю╤И╨╕╨▒╨║╨░ ╤Б╨▒╨╛╤А╨║╨╕.
+        
+        "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-5cx0n6\\cmTC_2200a.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+        (╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ClCompile) -> 
+          C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-5cx0n6\\src.c(1,10): error C1083: ╨Э╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ ╨▓╨║╨╗╤О╤З╨╡╨╜╨╕╨╡: pthread.h: No such file or directory, [C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-5cx0n6\\cmTC_2200a.vcxproj]
+        
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 1
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.21
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:238 (_threads_check_lib)"
+      - "CMakeLists.txt:187 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-a7emqi"
+      binary: "C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-a7emqi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      CMAKE_MODULE_PATH: "C:/Users/tmel/Desktop/1C_nativeNotification/example;C:/Users/tmel/Desktop/1C_nativeNotification/example/cmake"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-a7emqi'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/arm64/MSBuild.exe" cmTC_2cfeb.vcxproj /p:Configuration=Debug /p:Platform=ARM64 /p:VisualStudioVersion=18.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.0.5+e22287bf1 ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 22.01.2026 14:52:42.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-a7emqi\\cmTC_2cfeb.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-a7emqi\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_2cfeb.dir\\Debug\\cmTC_2cfeb.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_2cfeb.dir\\Debug\\cmTC_2cfeb.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_2cfeb.dir\\Debug\\cmTC_2cfeb.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MTd /Fo"cmTC_2cfeb.dir\\Debug\\\\" /Fd"cmTC_2cfeb.dir\\Debug\\vc145.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-a7emqi\\CheckFunctionExists.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.50.35721 ╨┤╨╗╤П ARM64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MTd /Fo"cmTC_2cfeb.dir\\Debug\\\\" /Fd"cmTC_2cfeb.dir\\Debug\\vc145.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-a7emqi\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\link.exe /OUT:"C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-a7emqi\\Debug\\cmTC_2cfeb.exe" /INCREMENTAL /ILK:"cmTC_2cfeb.dir\\Debug\\cmTC_2cfeb.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-a7emqi/Debug/cmTC_2cfeb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-a7emqi/Debug/cmTC_2cfeb.lib" /MACHINE:ARM64  /machine:ARM64 cmTC_2cfeb.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "pthreads.lib" [C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-a7emqi\\cmTC_2cfeb.vcxproj]
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-a7emqi\\cmTC_2cfeb.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) ╤Б ╨╛╤И╨╕╨▒╨║╨╛╨╣.
+        
+        ╨Ю╤И╨╕╨▒╨║╨░ ╤Б╨▒╨╛╤А╨║╨╕.
+        
+        "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-a7emqi\\cmTC_2cfeb.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+        (╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В Link) -> 
+          LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "pthreads.lib" [C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-a7emqi\\cmTC_2cfeb.vcxproj]
+        
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 1
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.29
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:239 (_threads_check_lib)"
+      - "CMakeLists.txt:187 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-nkkz82"
+      binary: "C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-nkkz82"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      CMAKE_MODULE_PATH: "C:/Users/tmel/Desktop/1C_nativeNotification/example;C:/Users/tmel/Desktop/1C_nativeNotification/example/cmake"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-nkkz82'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/arm64/MSBuild.exe" cmTC_40cde.vcxproj /p:Configuration=Debug /p:Platform=ARM64 /p:VisualStudioVersion=18.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.0.5+e22287bf1 ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 22.01.2026 14:52:43.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-nkkz82\\cmTC_40cde.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-nkkz82\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_40cde.dir\\Debug\\cmTC_40cde.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_40cde.dir\\Debug\\cmTC_40cde.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_40cde.dir\\Debug\\cmTC_40cde.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MTd /Fo"cmTC_40cde.dir\\Debug\\\\" /Fd"cmTC_40cde.dir\\Debug\\vc145.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-nkkz82\\CheckFunctionExists.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.50.35721 ╨┤╨╗╤П ARM64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MTd /Fo"cmTC_40cde.dir\\Debug\\\\" /Fd"cmTC_40cde.dir\\Debug\\vc145.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-nkkz82\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostArm64\\arm64\\link.exe /OUT:"C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-nkkz82\\Debug\\cmTC_40cde.exe" /INCREMENTAL /ILK:"cmTC_40cde.dir\\Debug\\cmTC_40cde.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-nkkz82/Debug/cmTC_40cde.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/CMakeFiles/CMakeScratch/TryCompile-nkkz82/Debug/cmTC_40cde.lib" /MACHINE:ARM64  /machine:ARM64 cmTC_40cde.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "pthread.lib" [C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-nkkz82\\cmTC_40cde.vcxproj]
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-nkkz82\\cmTC_40cde.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) ╤Б ╨╛╤И╨╕╨▒╨║╨╛╨╣.
+        
+        ╨Ю╤И╨╕╨▒╨║╨░ ╤Б╨▒╨╛╤А╨║╨╕.
+        
+        "C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-nkkz82\\cmTC_40cde.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+        (╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В Link) -> 
+          LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "pthread.lib" [C:\\Users\\tmel\\Desktop\\1C_nativeNotification\\example\\build_arm64\\CMakeFiles\\CMakeScratch\\TryCompile-nkkz82\\cmTC_40cde.vcxproj]
+        
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 1
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.26
+        
+      exitCode: 1
+  -
+    kind: "find-v1"
+    backtrace:
+      - "AddInChrome/CMakeLists.txt:88 (find_library)"
+    mode: "library"
+    variable: "1CEADNWEBChr"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "1CEAdnWebChrWin64"
+    candidate_directories:
+      - "C:/Users/tmel/Desktop/1C_nativeNotification/lib/"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Apache24/bin/"
+      - "C:/Program Files (x86)/NSIS/Bin/"
+      - "C:/Program Files (x86)/NSIS/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/lib/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/AddIn/lib/"
+      - "C:/Program Files (x86)/AddIn/"
+      - "C:/Program Files (x86)/AddIn/bin/"
+      - "/bin/"
+    found: "C:/Users/tmel/Desktop/1C_nativeNotification/lib/1CEAdnWebChrWin64.lib"
+    search_context:
+      CMAKE_LIBRARY_PATH:
+        - "C:/Users/tmel/Desktop/1C_nativeNotification/example/../lib"
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/AddIn"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/AddIn"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/AddIn/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "AddInChromeSetup/CMakeLists.txt:13 (find_program)"
+    mode: "program"
+    variable: "NSIS"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "makensis"
+    candidate_directories:
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Apache24/bin/"
+      - "C:/Program Files (x86)/NSIS/Bin/"
+      - "C:/Program Files (x86)/NSIS/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/AddIn/bin/"
+      - "C:/Program Files (x86)/AddIn/sbin/"
+      - "C:/Program Files (x86)/AddIn/"
+    searched_directories:
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/makensis.com"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/makensis.exe"
+      - "C:/Program Files/Parallels/Parallels Tools/Applications/makensis"
+      - "C:/Windows/System32/makensis.com"
+      - "C:/Windows/System32/makensis.exe"
+      - "C:/Windows/System32/makensis"
+      - "C:/Windows/makensis.com"
+      - "C:/Windows/makensis.exe"
+      - "C:/Windows/makensis"
+      - "C:/Windows/System32/wbem/makensis.com"
+      - "C:/Windows/System32/wbem/makensis.exe"
+      - "C:/Windows/System32/wbem/makensis"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/makensis.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/makensis.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/makensis"
+      - "C:/Windows/System32/OpenSSH/makensis.com"
+      - "C:/Windows/System32/OpenSSH/makensis.exe"
+      - "C:/Windows/System32/OpenSSH/makensis"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/makensis.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/makensis.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/makensis"
+      - "C:/Program Files/Git/cmd/makensis.com"
+      - "C:/Program Files/Git/cmd/makensis.exe"
+      - "C:/Program Files/Git/cmd/makensis"
+      - "C:/Program Files/CMake/bin/makensis.com"
+      - "C:/Program Files/CMake/bin/makensis.exe"
+      - "C:/Program Files/CMake/bin/makensis"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/makensis.com"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/makensis.exe"
+      - "C:/Users/tmel/AppData/Local/Microsoft/WindowsApps/makensis"
+      - "C:/Apache24/bin/makensis.com"
+      - "C:/Apache24/bin/makensis.exe"
+      - "C:/Apache24/bin/makensis"
+      - "C:/Program Files (x86)/NSIS/Bin/makensis.com"
+    found: "C:/Program Files (x86)/NSIS/Bin/makensis.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Parallels\\Parallels Tools\\Applications"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\tmel\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Apache24\\bin"
+        - "C:\\Program Files (x86)\\NSIS\\Bin"
+        - "C:\\Program Files (x86)\\NSIS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/AddIn"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/AddIn"
+...

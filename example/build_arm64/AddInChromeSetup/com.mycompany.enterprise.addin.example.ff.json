@@ -1,0 +1,10 @@
+{
+  "name": "com.mycompany.enterprise.addin.example",
+  "description": "AddInNative extension for Firefox",
+  "path": "AddInChrWin64.exe",
+  "type": "stdio",
+  "allowed_extensions": [
+    "1centext_ff@1c.ru",
+    "baf.dev.com@gmail.com"
+    ]
+}

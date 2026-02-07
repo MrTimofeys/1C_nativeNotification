@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Release"/>
+		<BuildType Name="Debug"/>
+		<Platform Name="ARM64"/>
+	</Configurations>
+	<Project Path="AddInChr.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="f70e1714-e615-34ec-bf6c-d00fb7b54e06">
+		<BuildDependency Project="../NativeAPI/AddInNative.vcxproj"/>
+		<BuildDependency Project="../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="../NativeAPI/AddInNative.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c8543fbe-6fd5-3b8b-88ef-bd5d3d87e114">
+		<BuildDependency Project="../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Folder Name="/CMakePredefinedTargets/">
+		<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="12e2b248-8bd3-3657-a14a-869a4d9c0edf" DefaultStartup="true">
+			<BuildDependency Project="AddInChr.vcxproj"/>
+			<BuildDependency Project="../ZERO_CHECK.vcxproj"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="Debug|*" Project="false"/>
+		</Project>
+		<Project Path="../ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="34977329-f23a-3896-97ba-b21151677beb"/>
+	</Folder>
+</Solution>

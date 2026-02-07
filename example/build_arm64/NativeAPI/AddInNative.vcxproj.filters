@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI\CMakeFiles\AddInNative.dir\cmake_pch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\localization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\AddInNative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\AddInNative.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\localization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\miniaudio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\Notification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI\CMakeFiles\AddInNative.dir\Release\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI\CMakeFiles\AddInNative.dir\Debug\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI\AddInNative.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI\AddInNative.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{59709715-AF0B-359D-87AA-DD1A4BD0054A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompile Header File">
+      <UniqueIdentifier>{299C6C62-74A2-3800-B988-66D789B2842E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{96977C1F-DDAD-3F7A-9B9F-3EBD301126A4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

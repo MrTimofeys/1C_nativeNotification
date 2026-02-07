@@ -2,7 +2,7 @@
 #==============================================================================#
 # identification you AddIn
 SET(MYCOMPANY "MyCompany" CACHE STRING "You company name")
-SET(ADN_NAME "AddInExample" CACHE STRING "You addin name")
+SET(ADN_NAME "AddInNative" CACHE STRING "You addin name")
 #==============================================================================#
 #seting projects names
 SET(Addn_Native "AddInNative" CACHE STRING "Name for NativeAPI project")
@@ -17,5 +17,5 @@ SET(Addn_MimeType "application/component-example-1" CACHE STRING "MIMEType for N
 #==============================================================================#
 set(Addn_VERSION_MAJOR 1 CACHE STRING "Version major")
 set(Addn_VERSION_MINOR 4 CACHE STRING "Version minor")
-set(Addn_VERSION_BUILD 4 CACHE STRING "Version build")
+set(Addn_VERSION_BUILD 5 CACHE STRING "Version build")
 #==============================================================================#

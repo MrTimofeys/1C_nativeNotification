@@ -1,0 +1,10 @@
+﻿  cmake_pch.cxx
+  localization.cpp
+  dllmain.cpp
+  AddInNative.cpp
+C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\AddInNative.cpp(52,16): warning C4311: приведение типов: усечение указателя из "IComponentBase *" в "long"
+  (compiling source file '../../NativeAPI/AddInNative.cpp')
+  
+  stdafx.cpp
+  Создание кода...
+x64\Release\cmake_pch.obj : fatal error LNK1112: тип компьютера модуля "x64" конфликтует с типом целевого компьютера "ARM64"

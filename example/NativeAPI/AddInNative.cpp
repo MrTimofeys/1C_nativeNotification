@@ -10,6 +10,9 @@
 #include <thread>
 #include <chrono>
 
+#include <windows.h>
+
+
 #define TIME_LEN 34
 #define ePropLast 0 // !!! Количество свойств !!!
 #define eMethLast 1 // !!! Количество методов !!!
@@ -323,6 +326,8 @@ bool CAddInNative::CallAsProc(const long lMethodNum, tVariant* paParams, const l
             }
             ma_decoder_uninit(&decoder);
             }).detach();
+
+        return true;
 
         return true;
     }

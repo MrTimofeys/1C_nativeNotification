@@ -1,0 +1,11 @@
+{
+  "name": "com.mycompany.enterprise.addin.example",
+  "description": "AddInNative Extension for Chrome",
+  "path": "AddInChrWin64.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://pbhelknnhilelbnhfpcjlcabhmfangik/",
+    "chrome-extension://dabkapchgmdkcihphgicpalppegkpond/",
+    "chrome-extension://fbeahdpfmckplkadiogimnogijfcbnbd/"
+  ]
+}

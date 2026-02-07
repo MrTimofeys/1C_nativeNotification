@@ -1,0 +1,26 @@
+^C:\USERS\TMEL\DESKTOP\1C_NATIVENOTIFICATION\EXAMPLE\BUILD_ARM64\CMAKEFILES\4CB0F932938F02F96A43F9EAC592D8C5\ADDINCHROMESETUP.RULE
+setlocal
+cd C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChromeSetup
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\NSIS\Bin\makensis.exe" AddInChromeSetup.nsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E rename C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/AddInChromeSetup/AddInChromeSetup64.exe C:/Users/tmel/Desktop/1C_nativeNotification/example/pkg/AddInChromeSetup64.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\TMEL\DESKTOP\1C_NATIVENOTIFICATION\EXAMPLE\ADDINCHROMESETUP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/tmel/Desktop/1C_nativeNotification/example -BC:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64 --check-stamp-file C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/AddInChromeSetup/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

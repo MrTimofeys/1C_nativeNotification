@@ -1,0 +1,8 @@
+LIBRARY    "AddInNativeWin64_01.DLL"
+
+EXPORTS
+GetClassObject
+DestroyObject
+GetClassNames
+SetPlatformCapabilities
+GetAttachType

@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>ARM64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C8543FBE-6FD5-3B8B-88EF-BD5D3D87E114}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <XPDeprecationWarning>false</XPDeprecationWarning>
+    <WindowsSDKDesktopARM64Support>true</WindowsSDKDesktopARM64Support>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>ARM64</Platform>
+    <ProjectName>AddInNative</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:\Users\tmel\Desktop\1C_nativeNotification\example\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">AddInNative.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">AddInNativeARM64_01</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AddInNativeARM64_01</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:\Users\tmel\Desktop\1C_nativeNotification\example\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">AddInNative.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">AddInNativeARM64_01</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AddInNativeARM64_01</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <CallingConvention>
+      </CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.dir/Release//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ADDINCPP_EXPORTS;ARM64;CMAKE_INTDIR="Release";AddInNative_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ADDINCPP_EXPORTS;ARM64;CMAKE_INTDIR=\"Release\";AddInNative_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copy AddInNative</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Release/AddInNativeARM64_01.dll C:/Users/tmel/Desktop/1C_nativeNotification/example/pkg/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E rename C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Release/AddInNativeARM64_01.dll C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/AddInNativeARM64_01.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Release/AddInNativeARM64_01.lib</ImportLibrary>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/debug_info/Release/AddInNativeARM64_01.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <SubSystem>
+      </SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <CallingConvention>
+      </CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.dir/Release//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ADDINCPP_EXPORTS;ARM64;CMAKE_INTDIR="Release";AddInNative_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ADDINCPP_EXPORTS;ARM64;CMAKE_INTDIR=\"Release\";AddInNative_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copy AddInNative</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Release/AddInNativeARM64_01.dll C:/Users/tmel/Desktop/1C_nativeNotification/example/pkg/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E rename C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Release/AddInNativeARM64_01.dll C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/AddInNativeARM64_01.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Release/AddInNativeARM64_01.lib</ImportLibrary>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/debug_info/Release/AddInNativeARM64_01.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <SubSystem>
+      </SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <CallingConvention>
+      </CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.dir/Debug//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ADDINCPP_EXPORTS;ARM64;CMAKE_INTDIR="Debug";AddInNative_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ADDINCPP_EXPORTS;ARM64;CMAKE_INTDIR=\"Debug\";AddInNative_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copy AddInNative</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Debug/AddInNativeARM64_01.dll C:/Users/tmel/Desktop/1C_nativeNotification/example/pkg/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E rename C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Debug/AddInNativeARM64_01.dll C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/AddInNativeARM64_01.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Debug/AddInNativeARM64_01.lib</ImportLibrary>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/debug_info/Debug/AddInNativeARM64_01.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <SubSystem>
+      </SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <CallingConvention>
+      </CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.dir/Debug//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ADDINCPP_EXPORTS;ARM64;CMAKE_INTDIR="Debug";AddInNative_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ADDINCPP_EXPORTS;ARM64;CMAKE_INTDIR=\"Debug\";AddInNative_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI;C:\Users\tmel\Desktop\1C_nativeNotification\example;C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64;C:\Users\tmel\Desktop\1C_nativeNotification\example\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copy AddInNative</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Debug/AddInNativeARM64_01.dll C:/Users/tmel/Desktop/1C_nativeNotification/example/pkg/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E rename C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Debug/AddInNativeARM64_01.dll C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/AddInNativeARM64_01.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/tmel/Desktop/1C_nativeNotification/example/bin/Debug/AddInNativeARM64_01.lib</ImportLibrary>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/tmel/Desktop/1C_nativeNotification/example/debug_info/Debug/AddInNativeARM64_01.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <SubSystem>
+      </SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI\CMakeFiles\AddInNative.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.dir/Release//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.dir/Release//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.dir/Debug//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/AddInNative.dir/Debug//cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\localization.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\dllmain.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\AddInNative.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\stdafx.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/tmel/Desktop/1C_nativeNotification/example/build_arm64/NativeAPI/CMakeFiles/AddInNative.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\AddInNative.h" />
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\stdafx.h" />
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\localization.h" />
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\miniaudio.h" />
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\NativeAPI\Notification.h" />
+    <ResourceCompile Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI\AddInNative.rc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ResourceCompile>
+    <None Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI\AddInNative.def" />
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI\CMakeFiles\AddInNative.dir\Release\cmake_pch.hxx" />
+    <ClInclude Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\NativeAPI\CMakeFiles\AddInNative.dir\Debug\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\ZERO_CHECK.vcxproj">
+      <Project>{34977329-F23A-3896-97BA-B21151677BEB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

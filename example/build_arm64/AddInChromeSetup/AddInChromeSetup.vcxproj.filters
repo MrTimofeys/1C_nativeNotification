@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\CMakeFiles\4cb0f932938f02f96a43f9eac592d8c5\AddInChromeSetup.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChromeSetup\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\AddInChromeSetup\AddInChromeSetup.nsi" />
+    <None Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChromeSetup\AddInChromeSetup.nsh" />
+    <None Include="C:\Users\tmel\Desktop\1C_nativeNotification\example\build_arm64\AddInChromeSetup\CMakeFiles\AddInChromeSetup" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EFA78707-00CA-370F-AAC9-24CCEFEE91B4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+
+<Solution>
+	<Configurations>
+		<Platform Name="ARM64" />
+		<Platform Name="x64" />
+	</Configurations>
+	<Project Path="AddInChrome/AddInChr.vcxproj" Id="f70e1714-e615-34ec-bf6c-d00fb7b54e06">
+		<BuildDependency Project="NativeAPI/AddInNative.vcxproj" />
+		<BuildDependency Project="ZERO_CHECK.vcxproj" />
+		<Platform Project="ARM64" />
+	</Project>
+	<Project Path="AddInChromeSetup/AddInChromeSetup.vcxproj" Id="5c903ad2-8de2-34a8-b737-b55918ef2858">
+		<BuildDependency Project="AddInChrome/AddInChr.vcxproj" />
+		<BuildDependency Project="NativeAPI/AddInNative.vcxproj" />
+		<BuildDependency Project="ZERO_CHECK.vcxproj" />
+		<Platform Project="ARM64" />
+	</Project>
+	<Project Path="NativeAPI/AddInNative.vcxproj" Id="c8543fbe-6fd5-3b8b-88ef-bd5d3d87e114">
+		<BuildDependency Project="ZERO_CHECK.vcxproj" />
+	</Project>
+	<Project Path="NativeAPI/localization/localization.vcxproj" Id="b287b179-2f13-34c6-8a86-017732c28954">
+		<BuildDependency Project="ZERO_CHECK.vcxproj" />
+		<Platform Project="ARM64" />
+	</Project>
+	<Folder Name="/CMakePredefinedTargets/">
+		<Project Path="ALL_BUILD.vcxproj" Id="12e2b248-8bd3-3657-a14a-869a4d9c0edf" DefaultStartup="true">
+			<BuildDependency Project="AddInChrome/AddInChr.vcxproj" />
+			<BuildDependency Project="AddInChromeSetup/AddInChromeSetup.vcxproj" />
+			<BuildDependency Project="NativeAPI/AddInNative.vcxproj" />
+			<BuildDependency Project="ZERO_CHECK.vcxproj" />
+			<BuildDependency Project="NativeAPI/localization/localization.vcxproj" />
+			<Platform Project="ARM64" />
+			<Build Solution="*|ARM64" Project="false" />
+		</Project>
+		<Project Path="ZERO_CHECK.vcxproj" Id="34977329-f23a-3896-97ba-b21151677beb">
+			<Platform Project="ARM64" />
+		</Project>
+	</Folder>
+</Solution>
